@@ -17,8 +17,13 @@ if ( hp <= 0 ) {
 		thescore = thescore + 5;
 	}
 	
+	audio_sound_set_track_position(snd_death,0.3);
+	audio_sound_pitch(snd_death, random_range(0.8, 1.2) );
+	audio_play_sound(snd_death,0,false);
+	
 	instance_destroy();
 	
-	
-	
 }
+
+// death sound (snd_death ogg file)
+
