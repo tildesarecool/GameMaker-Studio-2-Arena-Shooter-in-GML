@@ -1,0 +1,4 @@
+// scoring
+
+thescore = 0;
+
